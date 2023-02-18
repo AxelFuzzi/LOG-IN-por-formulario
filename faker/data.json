@@ -1,0 +1,27 @@
+[
+	{
+		"nombre": "Refined Fresh Table",
+		"precio": 57479,
+		"foto": "https://loremflickr.com/640/480/abstract"
+	},
+	{
+		"nombre": "Sleek Granite Bike",
+		"precio": 49984,
+		"foto": "https://loremflickr.com/640/480/abstract"
+	},
+	{
+		"nombre": "Small Metal Cheese",
+		"precio": 10480,
+		"foto": "https://loremflickr.com/640/480/abstract"
+	},
+	{
+		"nombre": "Intelligent Cotton Chicken",
+		"precio": 22143,
+		"foto": "https://loremflickr.com/640/480/abstract"
+	},
+	{
+		"nombre": "Elegant Fresh Ball",
+		"precio": 947,
+		"foto": "https://loremflickr.com/640/480/abstract"
+	}
+]
