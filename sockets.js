@@ -1,15 +1,14 @@
-//import ProductContainer from './apis/productContainer.js';
-import MsgContainer from './apis/msgContainer.js';
+import MsgContainer from './src/apis/msgContainer.js';
 
-//const productsApi = ProductContainer;
+//const productsApi = new ProductContainer();
 const messagesApi = MsgContainer;
 
 const Sockets = (io) => {
   io.on('connection', async (socket) => {
     console.log(`\nUn cliente con el id: [${socket.id}] se ha conectado.`);
 
-    // carga inicial de productos
-    //socket.emit('view-products', productsOnFront());
+    /*// carga inicial de productos
+    socket.emit('view-products', await productsApi.readProducts());*/
 
     // carga inicial de mensajes
     socket.emit('view-messages', await messagesApi.messageVcontroller());

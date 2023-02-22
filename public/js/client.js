@@ -1,8 +1,6 @@
-//import axios from 'axios';
 const socket = io.connect();
 
-/* ---------------------------- products section --------------------------*/
-
+/* ---------------------------- products section ---------------------------- */
 const productList = document.getElementById('product-list')
 
 axios
@@ -32,7 +30,8 @@ const table = products.data.map((res)=>
   productList.innerHTML = `<div>${table}</div>`
 })
 
-//--------------------------------------------------------------------------
+/* ---------------------------- messages section ---------------------------- */
+
 socket.on('view-messages', messages => {
   console.log(messages);
   const html = createList(messages);
@@ -50,5 +49,4 @@ function createList(messages) {
         `)
   }).join(" ");
 }
-//---------------------------------------------------------------------------
 
